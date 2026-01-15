@@ -1,7 +1,7 @@
 # find-chow-beta-v1.0
 Diaspora food finding app
 
-
+```
 ┌─────────────────────────────────────────────────────────────┐
 │                     FRONTEND (React-Vite)                   │
 │              (Runs in browser on user's device)              │
@@ -58,7 +58,9 @@ Diaspora food finding app
 │                                                              │
 │  Store images, product photos, review photos                │
 └──────────────────────────────────────────────────────────────┘
+```
 
+```
 backend/
 ├── main.py                 # Entry point, app initialization
 ├── requirements.txt        # Dependencies
@@ -109,6 +111,7 @@ backend/
     ├── cors.py            # CORS configuration
     ├── auth.py            # JWT verification middleware
     └── rate_limit.py      # Rate limiting
+```
 
 
 ## Authentication Flow
