@@ -115,7 +115,7 @@ backend/
 
 
 ## Authentication Flow
-
+```
 Frontend (React) 
   → User enters email + password on login page
   → POST /auth/login (email, password)
@@ -126,9 +126,10 @@ Frontend (React)
   → Frontend includes token in all future requests: Authorization: Bearer {token}
   → Middleware validates token on each request
   → If invalid/expired, return 401 Unauthorized, user redirected to login
+```
 
 ## Product Search Flow
-
+```
 Frontend (React)
   → User types "cassava flour" in search bar
   → POST /search (query: "cassava flour", city: "Toronto", filters: {...})
@@ -147,10 +148,10 @@ Frontend (React)
   → GET /products/{product_id}
   → Backend returns full product details + all store locations
   → Frontend displays store cards with call/directions CTAs
-
+```
 
 ## Store Review Creation
-
+```
 Frontend (React)
   → User fills review form (rating, text, photos)
   → User selects photo from device
@@ -164,9 +165,11 @@ Frontend (React)
   → Review becomes visible to all users
   → Store owner gets notification, can respond
   → Backend increments store's review count, recalculates rating average
+```
 
 ## Q&A Flow
 
+```
 Frontend (React)
   → User clicks "Ask about [store]"
   → User types question: "Do you carry fresh fufu?"
@@ -179,9 +182,10 @@ Frontend (React)
   → Answer appears under question (sorted by helpful votes)
   → Users upvote/downvote answers
   → Answers with more helpful votes float to top
+```
 
 ## Analytics Tracking Flow
-
+```
 Frontend (React)
   → User performs action (search, view store, click call button)
   → Frontend fires event: POST /analytics/events
@@ -197,6 +201,7 @@ Frontend (React)
      - "Which neighborhoods have most searches?"
      - "Which stores get most clicks-to-call?"
   → You use insights to identify supply gaps, recruit stores, guide product development
+```
 
 
 ## Key Endpoints
