@@ -256,7 +256,7 @@ DELETE /favorites/{favorite_id} - Unsave
 
 
 ## React Project Structure
-
+```
 frontend/
 ├── vite.config.js
 ├── package.json
@@ -350,3 +350,4 @@ frontend/
 │       ├── images/
 │       ├── icons/
 │       └── fonts/
+```
